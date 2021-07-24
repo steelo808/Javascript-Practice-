@@ -49,19 +49,82 @@
 
 // Leap year challenge
 
-let year = prompt("Enter a year to determine if its a leap year or not");
+// let year = prompt("Enter a year to determine if its a leap year or not");
 
-function isLeap(year) {
+// function isLeap(year) {
 
-    if(year % 4 === 0 && year % 400 === 0 && year % 100 !== 0){
-        console.log("year " + year + " is a leap year");
+//     if(year % 4 === 0 && year % 400 === 0 && year % 100 !== 0){
+//         console.log("year " + year + " is a leap year");
+//     }
+//     else if (year % 4 === 0 && year % 100 !== 0){
+//         console.log("year " + year + " is a leap year");
+//     }
+//     else{
+//         console.log("year " + year + " is not a leap year");
+//     }
+//     }
+
+//     isLeap(year);
+
+// Fizz Buzz Challenge
+
+
+let output = []; 
+let number = 1;
+
+
+function fizzBuzz(){
+
+    if(number % 3 === 0 && number % 5 === 0){
+        output.push("FizzBuzz");
     }
-    else if (year % 4 === 0 && year % 100 !== 0){
-        console.log("year " + year + " is a leap year");
+
+    else if (number % 3 === 0){
+        output.push("Fizz");
+        
+    }
+    else if(number % 5 === 0){
+        output.push("Buzz");
+        
+
     }
     else{
-        console.log("year " + year + " is not a leap year");
-    }
+        output.push(number);
     }
 
-    isLeap(year);
+    number++
+    console.log(output);
+    
+}
+
+
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+
+
+
+
+
+
